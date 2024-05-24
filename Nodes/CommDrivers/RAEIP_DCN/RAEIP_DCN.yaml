@@ -1,0 +1,5 @@
+Name: RAEIP_DCN
+Id: g=38bd71bc1697e6d9b65ee9455430c5ce
+Type: RAEtherNetIPDriver
+Children:
+- File: RAEtherNet_IPStation1/RAEtherNet_IPStation1.yaml

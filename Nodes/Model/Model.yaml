@@ -1,0 +1,135 @@
+Name: Model
+Id: g=e6f24abcaf65554b8c1b12c05569a728
+Type: ModelCategoryFolder
+Children:
+- Name: AnalogIN
+  Id: g=7a260c16a187021be4606361fa15eb8d
+  Type: BaseObjectType
+  Children:
+  - Name: In
+    Id: g=17f5dd2ade01dccceae289f900739aff
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Id: g=a1ae4ae9812888cdbea8580c2051d23b
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Id: g=137fe1b590530cbc658cfc7d2a865304
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Id: g=38a4d584b3fa2cf4f7d6f3c840ded967
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+    - Name: EngineeringUnits
+      Id: g=edc58c9e14567db4d0034be0344715dd
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Id: g=53917651ec4350f2e8e6d91bc673076a
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 20529
+      - Name: DisplayName
+        Id: g=0395dc66f90211e83fbca938a4d45486
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=c9d763a613555b0452ffe7adedf15226
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: NamespaceIndex
+        Id: g=182661423d60c70e6b2f8c21d8229df5
+        Type: BaseVariableType
+        DataType: NamespaceIndex
+        ReferenceType: HasProperty
+        Value: 20
+    - Name: DynamicLink
+      Id: g=f2cff9b2e785a2f566859b8cf6d55208
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEIP_DCN/RAEtherNet_IPStation1/Tags/Controller Tags/DCN_ANALOG_INPUTS/0/Instance/Inputs/IN/ActualValue/Value"
+      Children:
+      - Name: Mode
+        Id: g=5bfca2116883510d4557e2958765354d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: AnalogOut
+  Id: g=5804d48e41395b7b165d9465547ca8a2
+  Type: BaseObjectType
+  Children:
+  - Name: Out
+    Id: g=7bf86b74deaabeaf047ca89f3a9b091b
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Id: g=486e89a07cd869e25e8a895008f17e36
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Id: g=5d4263aef0892eb86d629c74ad7b05db
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Id: g=3dcfd8633e44ac4a46eae7e40f853976
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+    - Name: EngineeringUnits
+      Id: g=7f88a6577fe3d92c1e5a563f8dae4028
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Id: g=ace4f51b068fdc4f7ab9f26439886ea3
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 20529
+      - Name: DisplayName
+        Id: g=f88a2af86cbf3205758cc0c9d8bee8f7
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=3b432cd40cf92ee6aadb24900f4dcb85
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: NamespaceIndex
+        Id: g=d59b8558318ae6ddf83c27ff4fcb9065
+        Type: BaseVariableType
+        DataType: NamespaceIndex
+        ReferenceType: HasProperty
+        Value: 20
+- Name: EUDictionary
+  Id: g=fed639cf38442880ca0b02c2e840ac0c
+  Type: EngineeringUnitDictionary
+  DataType: EngineeringUnitDictionaryItem
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: [{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":20529,"DisplayName":{"LocaleId":"en-US","Text":"%"},"Description":{"LocaleId":"en-US","Text":"Percent"},"PhysicalDimension":0,"Slope":0.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":5124409,"DisplayName":{"LocaleId":"en-US","Text":"inH20"},"Description":{"LocaleId":"en-US","Text":"inch of water (60 ºF)"},"PhysicalDimension":0,"Slope":0.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":14384,"DisplayName":{"LocaleId":"en-US","Text":"PSIA"},"Description":{"LocaleId":"en-US","Text":"pound per square inch absolute"},"PhysicalDimension":0,"Slope":0.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":18226,"DisplayName":{"LocaleId":"en-US","Text":"GPM"},"Description":{"LocaleId":"en-US","Text":"US gallon per minute"},"PhysicalDimension":21,"Slope":0.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":4604232,"DisplayName":{"LocaleId":"en-US","Text":"degF"},"Description":{"LocaleId":"en-US","Text":"degree Fahrenheit"},"PhysicalDimension":3,"Slope":0.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":5124410,"DisplayName":{"LocaleId":"en-US","Text":"A"},"Description":{"LocaleId":"en-US","Text":"ampare"},"PhysicalDimension":1,"Slope":0.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":13387,"DisplayName":{"LocaleId":"en-US","Text":"mA"},"Description":{"LocaleId":"en-US","Text":"milliampere"},"PhysicalDimension":7,"Slope":0.0,"Intercept":0.0}}]
+- File: ComboBoxModel/ComboBoxModel.yaml

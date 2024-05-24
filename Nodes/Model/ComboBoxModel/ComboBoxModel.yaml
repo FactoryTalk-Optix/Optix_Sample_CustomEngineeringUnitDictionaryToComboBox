@@ -1,0 +1,45 @@
+Name: ComboBoxModel
+Id: g=16924bbdb2d1c783cf5ddd0bbf7c7f4c
+Type: FolderType
+Children:
+- Name: ListObject
+  Id: g=d50448a719e9ac25e234a57f1383cc59
+  Type: BaseObjectType
+  Children:
+  - Name: %
+    Id: g=9dba38708e577fc9dd6f9a5768cb628b
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20529
+  - Name: inH2O
+    Id: g=3563908a51478caef9495513b7101f07
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5124409
+  - Name: PSIA
+    Id: g=683e1df0882ce04f03efc1461c4e6563
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 14384
+  - Name: (None)
+    Id: g=331282995efa6ae43d7b06c120a0d084
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: ComboBox_Output
+  Id: g=7c0c8e462006018cd404585ac07375ff
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=22cf27ce5ec645ba72a22116c4d47245
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEIP_DCN/RAEtherNet_IPStation1/Tags/Controller Tags/DCN_ANALOG_INPUTS/0/Instance/Inputs/IN/ActualValue/EUInformation/UnitID@Value"
+    Children:
+    - Name: Mode
+      Id: g=d6e4c2c262c1036fb16176da5f51ef1a
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

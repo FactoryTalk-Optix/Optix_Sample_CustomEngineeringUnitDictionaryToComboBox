@@ -1,0 +1,1080 @@
+Name: DataTypes
+Id: g=b8ebbefe459afd64524069cb095104d3
+Type: FolderType
+Children:
+- Class: DataType
+  Name: OPAS_EU_INFO_TYPE
+  Id: g=715efb8f951b1537fe002f7a2f3e7bcc
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_EU_INFO_TYPE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "715efb8f951b1537fe002f7a2f3e7bcc",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "NamespaceID",
+      "DataType": {
+       "Id": 7
+      }
+     },{
+      "Name": "UnitID",
+      "DataType": {
+       "Id": 7
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_EU_INFO_TYPE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=cbb4f220da38612c9220bcc2ad50b899
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_OPAS_AIparameters
+  Id: g=6d4398a73a783ee5c79a3f7cf83d8fba
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_OPAS_AIparameters",
+    "DataType": {
+     "IdType": 2,
+     "Id": "6d4398a73a783ee5c79a3f7cf83d8fba",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "Configuration",
+      "DataType": {
+       "IdType": 2,
+       "Id": "0582955cd221dd4040f0dc6b1e6622f5",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Diagnostics",
+      "DataType": {
+       "IdType": 2,
+       "Id": "a179e7a1fd812c2450e3d21a5946c1ae",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Inputs",
+      "DataType": {
+       "IdType": 2,
+       "Id": "1d502bd286ce3ffda48c0f3d52267d2a",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Operational",
+      "DataType": {
+       "IdType": 2,
+       "Id": "559d4823c916c041f5e5dccf7d8dfa3e",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Outputs",
+      "DataType": {
+       "IdType": 2,
+       "Id": "933603eb0d7c1f0319ae997b5d4cabae",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ef3c6a55a56356e9d1fcc958ea553948",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Tuning",
+      "DataType": {
+       "IdType": 2,
+       "Id": "b7762c584112f1de39e8b0be16be8e62",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_OPAS_AIparameters"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=6ec7cc41a6241cf422eee44283031c27
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_R_Parameter
+  Id: g=2359ae41c0b5003afe202a1ad247deae
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_R_Parameter",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2359ae41c0b5003afe202a1ad247deae",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "Status",
+      "DataType": {
+       "Id": 7
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 11
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_R_Parameter"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=981b921632f6389de9fc3b78997ca53e
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OutScaling
+  Id: g=47ebcbbc7c0a12219623dd79fb179a31
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OutScaling",
+    "DataType": {
+     "IdType": 2,
+     "Id": "47ebcbbc7c0a12219623dd79fb179a31",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "ScalingEngineeringUnits",
+      "DataType": {
+       "IdType": 2,
+       "Id": "715efb8f951b1537fe002f7a2f3e7bcc",
+       "Namespace": 20
+      }
+     },{
+      "Name": "ScalingRange",
+      "DataType": {
+       "IdType": 2,
+       "Id": "746830792aa0c6356056810a5efc5eaf",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OutScaling"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=cb336720526432b2094c19eb5b0ff40f
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_RANGE_REAL_TYPE
+  Id: g=746830792aa0c6356056810a5efc5eaf
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_RANGE_REAL_TYPE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "746830792aa0c6356056810a5efc5eaf",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "High",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Low",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_RANGE_REAL_TYPE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=0b02c47b688e33ff3ff98c5f81957400
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_Mode
+  Id: g=7a6d932a24f50ab709e00220e12d658d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_Mode",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7a6d932a24f50ab709e00220e12d658d",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "Actual",
+      "DataType": {
+       "Id": 3
+      }
+     },{
+      "Name": "Normal",
+      "DataType": {
+       "Id": 3
+      }
+     },{
+      "Name": "Permitted",
+      "DataType": {
+       "Id": 3
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [9]
+     },{
+      "Name": "Target",
+      "DataType": {
+       "Id": 3
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_Mode"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=e1d281915044f4fbb03100597c5cd1b8
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_AI_INSTANCE_TYPE
+  Id: g=f2164c390c78c4874a86c2ddc72be67a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_AI_INSTANCE_TYPE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f2164c390c78c4874a86c2ddc72be67a",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "AppID",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "AppIndex",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "BlockType",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ExecOrder",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Instance",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6d4398a73a783ee5c79a3f7cf83d8fba",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Instantiated",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Label",
+      "DataType": {
+       "Id": 12
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_AI_INSTANCE_TYPE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=a05121c72496ab58aa36baf17880e121
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_AIoperational
+  Id: g=559d4823c916c041f5e5dccf7d8dfa3e
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_AIoperational",
+    "DataType": {
+     "IdType": 2,
+     "Id": "559d4823c916c041f5e5dccf7d8dfa3e",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "MODE_BLK",
+      "DataType": {
+       "IdType": 2,
+       "Id": "7a6d932a24f50ab709e00220e12d658d",
+       "Namespace": 20
+      }
+     },{
+      "Name": "SIMULATE",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ff3a9a477e3ad9ef8fc87baf193fa691",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_AIoperational"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=bd8d3d4c1c2ad30e818cc75233176a90
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_ACCESS_LEVEL_TYPE
+  Id: g=2800b5dad9142e5f4e80afe1465e5edc
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_ACCESS_LEVEL_TYPE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2800b5dad9142e5f4e80afe1465e5edc",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "CurrentRead",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "CurrentWrite",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HistoryRead",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HistoryWrite",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoatomicRead",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoatomicWrite",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SemanticChange",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "StatusWrite",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TimestampWrite",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "WriteFullArrayOnly",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_ACCESS_LEVEL_TYPE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=5e1424edda2cd36c8891114691a3f940
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_OPAS_AIoutputs
+  Id: g=933603eb0d7c1f0319ae997b5d4cabae
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_OPAS_AIoutputs",
+    "DataType": {
+     "IdType": 2,
+     "Id": "933603eb0d7c1f0319ae997b5d4cabae",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "OUT",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9e4639363ab1acd7f1053391eb50f53a",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_OPAS_AIoutputs"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=87614913a2441f8f1b712e15aa2a3761
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_AItuning
+  Id: g=b7762c584112f1de39e8b0be16be8e62
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_AItuning",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b7762c584112f1de39e8b0be16be8e62",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "LOW_CUT",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_FTIME",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_AItuning"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=d3b58e7fd151b566dce557a510c37f49
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_OPAS_REAL_SIGNAL_TYPE
+  Id: g=9e4639363ab1acd7f1053391eb50f53a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_OPAS_REAL_SIGNAL_TYPE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "9e4639363ab1acd7f1053391eb50f53a",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "EUInformation",
+      "DataType": {
+       "IdType": 2,
+       "Id": "715efb8f951b1537fe002f7a2f3e7bcc",
+       "Namespace": 20
+      }
+     },{
+      "Name": "EURange",
+      "DataType": {
+       "IdType": 2,
+       "Id": "746830792aa0c6356056810a5efc5eaf",
+       "Namespace": 20
+      }
+     },{
+      "Name": "MetaData",
+      "DataType": {
+       "IdType": 2,
+       "Id": "8b64b0fc3f4a5956b959d797ef656b25",
+       "Namespace": 20
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 11
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_OPAS_REAL_SIGNAL_TYPE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=ac6717df6a0cb74f5623c1ed688efdd0
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_OPAS_AIinputs
+  Id: g=1d502bd286ce3ffda48c0f3d52267d2a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_OPAS_AIinputs",
+    "DataType": {
+     "IdType": 2,
+     "Id": "1d502bd286ce3ffda48c0f3d52267d2a",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "IN",
+      "DataType": {
+       "IdType": 2,
+       "Id": "8c1a384357d67343ba1ec7a5ea240324",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_OPAS_AIinputs"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=8ffcad44e3dff6f3d639b3016f540bf3
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_OPAS_AIstatus
+  Id: g=ef3c6a55a56356e9d1fcc958ea553948
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_OPAS_AIstatus",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ef3c6a55a56356e9d1fcc958ea553948",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "FIELD",
+      "DataType": {
+       "IdType": 2,
+       "Id": "2359ae41c0b5003afe202a1ad247deae",
+       "Namespace": 20
+      }
+     },{
+      "Name": "PV",
+      "DataType": {
+       "IdType": 2,
+       "Id": "2359ae41c0b5003afe202a1ad247deae",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_OPAS_AIstatus"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=f972d8fc9f8fbe910c7530d91c695315
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_SIGNAL_METADATA_TYPE
+  Id: g=8b64b0fc3f4a5956b959d797ef656b25
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_SIGNAL_METADATA_TYPE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8b64b0fc3f4a5956b959d797ef656b25",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "AccessLevel",
+      "DataType": {
+       "IdType": 2,
+       "Id": "2800b5dad9142e5f4e80afe1465e5edc",
+       "Namespace": 20
+      }
+     },{
+      "Name": "SourceTimestamp",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 7
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_SIGNAL_METADATA_TYPE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=1cf14ef0e8cfd648f6b99c7dc31f6995
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_Scale
+  Id: g=a685344208ecc7fb8a93f2586d95a7d0
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_Scale",
+    "DataType": {
+     "IdType": 2,
+     "Id": "a685344208ecc7fb8a93f2586d95a7d0",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "DecimalPoint",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "EUat0",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "EUat100",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UnitsIndex",
+      "DataType": {
+       "Id": 7
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_Scale"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=0448c3803e3a4dfe008d8b25d042d211
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_AIconfiguration
+  Id: g=0582955cd221dd4040f0dc6b1e6622f5
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_AIconfiguration",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0582955cd221dd4040f0dc6b1e6622f5",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "IO_OPTS",
+      "DataType": {
+       "IdType": 2,
+       "Id": "8e6d00b988ada6d74f25a54f14097822",
+       "Namespace": 20
+      }
+     },{
+      "Name": "L_TYPE",
+      "DataType": {
+       "Id": 5
+      }
+     },{
+      "Name": "OUT_SCALE",
+      "DataType": {
+       "IdType": 2,
+       "Id": "a685344208ecc7fb8a93f2586d95a7d0",
+       "Namespace": 20
+      }
+     },{
+      "Name": "OUT_SCALING",
+      "DataType": {
+       "IdType": 2,
+       "Id": "47ebcbbc7c0a12219623dd79fb179a31",
+       "Namespace": 20
+      }
+     },{
+      "Name": "STATUS_OPTS",
+      "DataType": {
+       "IdType": 2,
+       "Id": "8e6d00b988ada6d74f25a54f14097822",
+       "Namespace": 20
+      }
+     },{
+      "Name": "XD_SCALE",
+      "DataType": {
+       "IdType": 2,
+       "Id": "a685344208ecc7fb8a93f2586d95a7d0",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_AIconfiguration"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=5e2dcc1e36706a315776db1e327c27f3
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_AIdiagnostics
+  Id: g=a179e7a1fd812c2450e3d21a5946c1ae
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_AIdiagnostics",
+    "DataType": {
+     "IdType": 2,
+     "Id": "a179e7a1fd812c2450e3d21a5946c1ae",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "BLOCK_ERR",
+      "DataType": {
+       "Id": 5
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_AIdiagnostics"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=f78601a679c76b942e9de4ce040c932d
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DCN_OPAS_Real_ActualValue
+  Id: g=8c1a384357d67343ba1ec7a5ea240324
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DCN_OPAS_Real_ActualValue",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8c1a384357d67343ba1ec7a5ea240324",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "ActualValue",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9e4639363ab1acd7f1053391eb50f53a",
+       "Namespace": 20
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DCN_OPAS_Real_ActualValue"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=8eb0f0cc00392ce3bee43d970e26bf91
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: A_Simulate
+  Id: g=ff3a9a477e3ad9ef8fc87baf193fa691
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "A_Simulate",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ff3a9a477e3ad9ef8fc87baf193fa691",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "Enable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 7
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"A_Simulate"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=08c8fed72073a2cfc1bd6bb2f2221e2d
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OPAS_OPTIONS
+  Id: g=8e6d00b988ada6d74f25a54f14097822
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OPAS_OPTIONS",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8e6d00b988ada6d74f25a54f14097822",
+     "Namespace": 20
+    },
+    "Fields": [{
+      "Name": "ActOnIR",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "BadIfLimited",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "BypassEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DirectActing",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultStateOnRestart",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultStateToValue",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IFSIfBadCasIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IFSIfBadIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IFSIfBadTrkInD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IFSIfBadTrkVal",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IncreaseToClose",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Invert",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LowCutEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ManualIfBadTrkInD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ManualIfBadTrkVal",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoOutLimitsInManual",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ObeySpLimitsIfCasOrRCas",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PropagateFaultBackward",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PropagateFaultForward",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ReadBackIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SISLatchFaultState",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpLimitCasRCas",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpPvTrackInLO",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpPvTrackInLOorIMan",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpPvTrackInManual",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpPvTrackLow",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpPvTrackReturn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpTrackRetainedTarget",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SpTrackTarget",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetManIfFaultStateActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetToManualIfBadIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetToManualIfBadTrkInD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetToManualIfBadTrkVal",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetToManualIfFaultStateActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetToManualIfTrkActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TargetToNextPermittedModeIfBadCasIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TrackEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TrackIfBadTrkInD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TrackInManual",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UncertainIfLimited",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UncertainIfManual",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UnitsConversion",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UseBackCalOutWithIn1",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UseFaultStateValueOnRestart",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UsePVForBackCalOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UseUncertainAsGood",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OPAS_OPTIONS"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=24667fe52b836cf004bb73fe9fb7096d
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

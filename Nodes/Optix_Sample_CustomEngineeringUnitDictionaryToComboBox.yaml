@@ -1,0 +1,85 @@
+Name: Optix_Sample_CustomEngineeringUnitDictionaryToComboBox
+Id: g=d607f5f75ca5d22f390f1256bd80edf0
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=df46c27d63db0fdf440b8deb33dcb388
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=083eeda569f6de274cc2e0e94836c01a
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=25ce3297770fad4fd6650cc6cd9f5926
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: MeasurementSystemMap
+    Id: g=e5515fec275cf2d30b95127aa0e100d7
+    Type: BaseDataVariableType
+    DataType: MeasurementSystemMapItem
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+- Name: Authentication
+  Id: g=90ffcace249848020938f75fc13c1ef0
+  Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Id: g=783955468466582e4b28cc11f9959b4b
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_CustomEngineeringUnitDictionaryToComboBox/Security/Users"
+    Children:
+    - Name: Kind
+      Id: g=9fe2bfec006242cf6e630fbddc6c452b
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+- Name: PasswordPolicy
+  Id: g=97a0ea0fbf67c8d49a7ccc1088d697d3
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=09600561a0ed63888605a07557d37dcb
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=914785f34e9a5fbcead58b40b1862589
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=aadfac66037eac84cdb50c282a7458af
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=05b073f877b4cec50ab77fdd902e103f
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=85f68592a8a8010bea92561290ed53e0
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: OPCUA/OPCUA.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml

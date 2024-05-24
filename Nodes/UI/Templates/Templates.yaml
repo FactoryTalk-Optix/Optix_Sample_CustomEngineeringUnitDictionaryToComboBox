@@ -1,0 +1,222 @@
+Name: Templates
+Id: g=757c8186f3580549b61d02187169057f
+Type: FolderType
+Children:
+- Name: raExp_MJA1_OPAEU_CB
+  Id: g=952f960a95589af9fcdf584c0efca083
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=8bf48ba389ee1ed1144fec4393fce732
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 200.0
+  - Name: Height
+    Id: g=65fe11e39e503ecd07fb894b8ae5cc0d
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 40.0
+  - Name: HorizontalAlignment
+    Id: g=f81621d20bc7168eab7bd9e875889ab6
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: VerticalAlignment
+    Id: g=f567743240dd42af0b2ec77238b47265
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: ComboBox
+    Id: g=ddac2409228b02389280a6980f86a855
+    Type: ComboBox
+    Children:
+    - Name: Text
+      Id: g=2e37df89cfb8f00bc49f600257f0dade
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Model
+      Id: g=c3f682100d01dd5a0ad50dd3842e2165
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: ItemKind
+        Id: g=d64b96e868f70519fa03936778e800a9
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/Optix_Sample_CustomEngineeringUnitDictionaryToComboBox/Model/ComboBoxModel/ListObject/%"
+      - Name: Kind
+        Id: g=aae55f0223786ba2b565cc50bfbbd00f
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SelectedValue
+      Id: g=38cf02b8e279794f519a403d4ce39940
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      Value: 
+       {
+        "Type": 22,
+        "Body": {
+         "TypeId": {
+          "Id": 887
+         },
+         "Body": {
+          "NamespaceUri": "",
+          "UnitId": 0,
+          "DisplayName": {
+           "NamespaceIndex": -1,
+           "LocaleId": "",
+           "Text": ""
+          },
+          "Description": {
+           "NamespaceIndex": -1,
+           "LocaleId": "",
+           "Text": ""
+          }
+         }
+        }
+       }
+      Children:
+      - Name: DynamicLink
+        Id: g=72518ed9d85aef82617a06b222551c3e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../outSelectedValue@Value"
+        Children:
+        - Name: Mode
+          Id: g=68b7843cb11fed1eae2c431be26bc3f9
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: SelectedItem
+      Id: g=34bf0edff27562b64dcecb8fd9c34035
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=5b0ef5071f6d2ec993d6cfef28b98a19
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/Optix_Sample_CustomEngineeringUnitDictionaryToComboBox/Model/ComboBoxModel/ListObject/%"
+      - Name: NodeClass
+        Id: g=c82a9d64f09bbfda3715d1359d379e0f
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        ModellingRule: Optional
+        Value: 2
+      - Name: DynamicLink
+        Id: g=86daaa913ece97fb47c0b2c95283caf8
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../inpSelectedValue@NodeId"
+    - Name: UISelectedItem
+      Id: g=f8e40e3c64c33438b9eb8360647f4686
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: UISelectedValue
+      Id: g=583bdf3d14aca91ec567b865290d7c42
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      AccessLevel: Read
+    - Name: Width
+      Id: g=ebe29eb3025dd5b2f4c2eea54eaee719
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Item
+      Id: g=9300cc629e6e4fa5c7f3d18f22810eb6
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=5ec02d76cc10373ade43f94ccd00360a
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/Optix_Sample_CustomEngineeringUnitDictionaryToComboBox/Model/ComboBoxModel/ListObject/%"
+    - Name: HorizontalAlignment
+      Id: g=92b7da2fd1713796d99fc3090c0a8b6a
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=bee46bc6fc2609e457645d06186e0429
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: DisplayValuePath
+      Id: g=86161704db8192bdb388e0669a6a1b4f
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=2d7ec8ef2462b881b73c530ec77b3f2f
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@BrowseName"
+    - Name: SelectedValuePath
+      Id: g=7ef1bec619a5814fe830c3fbef2422d5
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      Children:
+      - Name: DynamicLink
+        Id: g=82fb931b9d20ceab1a3fd35117c16b7e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@Value"
+    - Name: Mode
+      Id: g=6a3a5cc6f62212a0959560b4ae8404af
+      Type: BaseVariableType
+      DataType: ComboBoxModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: InputBoxStyle
+      Id: g=af48fe99ae0ebf15cfae63f0e7d9863d
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+    - Name: DataListStyle
+      Id: g=ca2c8e7c8c333765687a463e55191144
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+  - Name: EUStructureToObject
+    Id: g=6fa34c830d4b29d2fe195239a34fde10
+    Type: NetLogic
+  - Name: InpEUDictionary
+    Id: g=1bff8b3bd38b38fa418b0992de5bea03
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=c72e03db5758313c8202c7a20fd24184
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: inpSelectedValue
+    Id: g=72a9326bd99fd8f455e30a8123fe2fa7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: outSelectedValue
+    Id: g=69f39f0814da5d657ff410dc6da212e5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
